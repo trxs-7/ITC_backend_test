@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Officers</h1>
+<ol class="officers">
+    {% for officer in officers %}
+    <li>
+        <ul>
+            <li><p>ID: {{ officer.id }}</p></li>
+            <li><p>Name: {{ officer.name }}</p></li>
+            <li><p>Year: {{ officer.year }}</p></li>
+            <li><p>Hobby: {{ officer.hobby }}</p></li>
+        </ul>
+    </li>
+    <br>
+    {% endfor %}
+</ol>
+    
+{% endblock %}
